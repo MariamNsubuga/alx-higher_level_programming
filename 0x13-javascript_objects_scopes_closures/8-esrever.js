@@ -1,3 +1,9 @@
 #!/usr/bin/node
-let count = 0;
-exports.logMe = function (item) { console.log(`${count++}: ${item}`); };
+
+exports.esrever = function (list) {
+  const newArr = [];
+  for (let x = list.length - 1; x >= 0; x--) {
+    newArr.push(list[x]);
+  }
+  return (newArr);
+};
